@@ -14,5 +14,11 @@ public class Truck extends TransportVehicle implements MotorVehicle {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп грузовика");
     }
+
+    public void check() {
+        updateTyres();
+        checkEngine();
+        checkTrailer();
+    }
 }
 

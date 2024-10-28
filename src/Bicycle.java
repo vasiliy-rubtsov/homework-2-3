@@ -7,4 +7,8 @@ public class Bicycle extends TransportVehicle {
     public void updateTyre() {
         System.out.println("Меняем покрышку велосипеда");
     }
+
+    public void check() {
+        updateTyres();
+    }
 }

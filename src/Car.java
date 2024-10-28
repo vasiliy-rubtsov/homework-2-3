@@ -11,5 +11,10 @@ public class Car extends TransportVehicle implements MotorVehicle {
     public void checkEngine() {
         System.out.println("Проверяем двигатель легкового автомобиля");
     }
+
+    public void check() {
+        updateTyres();
+        checkEngine();
+    }
 }
 

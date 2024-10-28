@@ -16,4 +16,12 @@ public abstract class TransportVehicle {
     }
 
     public abstract void updateTyre();
+
+    public abstract void check();
+
+    public void updateTyres() {
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
+    }
 }
