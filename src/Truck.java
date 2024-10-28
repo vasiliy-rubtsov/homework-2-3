@@ -1,18 +1,24 @@
-public class Truck {
-
-    public String modelName;
-    public int wheelsCount;
+public class Truck extends TransportVehicle implements MotorVehicle {
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку грузовика");
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем двигатель грузовика");
     }
 
     public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
+        System.out.println("Проверяем прицеп грузовика");
+    }
+
+    public void check() {
+        updateTyres();
+        checkEngine();
+        checkTrailer();
     }
 }
 

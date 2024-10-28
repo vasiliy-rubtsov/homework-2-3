@@ -1,14 +1,20 @@
-public class Car {
+public class Car extends TransportVehicle implements MotorVehicle {
 
-    public String modelName;
-    public int wheelsCount;
+    public Car(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку легкового автомобиля");
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем двигатель легкового автомобиля");
+    }
+
+    public void check() {
+        updateTyres();
+        checkEngine();
     }
 }
 
